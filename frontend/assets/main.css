@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+
+:root {
+  --polka-bg-image:
+    radial-gradient(rgb(14, 14, 14) 24%, transparent 24%),
+    radial-gradient(rgb(14, 14, 14) 24%, transparent 24%);
+  --polka-bg-position: 0px 0px, 56px 56px;
+  --polka-bg-size: 112px 112px;
+  --polka-bg-color: rgb(13, 13, 13);
+}
+
+.polka {
+  background-image: 
+    radial-gradient(rgb(14, 14, 14) 24%, transparent 24%),
+    radial-gradient(rgb(14, 14, 14) 24%, transparent 24%);
+  background-position: 0px 0px, 56px 56px;
+  background-size: 112px 112px;
+  background-color: rgb(13, 13, 13);
+}
