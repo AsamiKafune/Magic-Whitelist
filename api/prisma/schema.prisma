@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model whitelist {
+  id         Int      @id @default(autoincrement())
+  slipDetail Json
+  username   String
+  register   DateTime @default(now())
+}
+
+model transactionBank {
+  id      Int    @id @default(autoincrement())
+  amount  Int
+  ref     String
+  Tranref String
+}
